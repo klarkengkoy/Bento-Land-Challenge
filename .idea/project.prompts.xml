@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PromptTemplates">
+    <option name="builtInPromptOverrides">
+      <list>
+        <BuiltInPromptOverride>
+          <option name="groupId" value="rules" />
+          <option name="promptId" value="project" />
+          <option name="text" value="# Bento Land — instructions for Gemini&#10;&#10;These apply to every prompt in this project.&#10;&#10;## 1. Keep NOTES.md updated as you go&#10;&#10;Maintain a file called `NOTES.md` at the project root. Use exactly this structure:&#10;&#10;```markdown&#10;# Notes&#10;&#10;## Finished&#10;1. ...&#10;2. ...&#10;&#10;## Next&#10;1. ...&#10;2. ...&#10;&#10;## Judgment calls&#10;1. ...&#10;2. ...&#10;```&#10;&#10;Rules for maintaining it:&#10;- If `NOTES.md` doesn't exist yet, create it with this structure the first time you touch the project.&#10;- After any change you make (new screen, new API call, fix, etc.), add a new numbered line to **Finished** describing it in one short sentence.&#10;- If something is left incomplete or deferred, add a numbered line to **Next**.&#10;- Any time you have to interpret something ambiguous in the design or the API — a field that's missing, a state the design doesn't show, a naming mismatch, a spacing/color guess — add a numbered line to **Judgment calls** explaining what you chose and why.&#10;- Append new numbers to the end of each list; don't renumber or delete existing entries unless I ask you to.&#10;- Do this without being asked in every prompt — treat it as part of finishing any task, the same way you'd save a file.&#10;&#10;## 2. Never silently change a dependency or SDK version&#10;&#10;Do not upgrade, downgrade, or otherwise change any version already set in the project — Android Gradle Plugin (AGP), Kotlin, `compileSdk`, `targetSdk`, `minSdk`, Gradle wrapper version, or any library/dependency version — even if you believe a newer or older version would fix a build error.&#10;&#10;If you hit a problem that seems to require a version change:&#10;1. Stop before editing any Gradle file.&#10;2. Tell me what's broken, which version you think needs to change, from what to what, and why.&#10;3. Wait for me to confirm before making the edit.&#10;&#10;This applies even to transitive/suggested fixes from Android Studio's own &quot;upgrade available&quot; prompts — surface them to me, don't apply them yourself." />
+        </BuiltInPromptOverride>
+      </list>
+    </option>
+  </component>
+</project>
